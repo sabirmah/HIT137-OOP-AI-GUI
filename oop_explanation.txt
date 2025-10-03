@@ -1,6 +1,35 @@
+OOP Concepts Used in Our Tkinter + Hugging Face GUI
 
-We have used many method such as:
-- Encapsulation in class GUIApp (all widgets are given private).
-- Inheritance in AIModel class structure.
-- Method overriding in the run_model().
-- Multiple decorators for logging + error handling.
+1. Encapsulation:
+   - In the `AIModel` class, the attribute `_model_name` is private.
+   - This ensures that model details are hidden from direct access and are acessed only via methods.
+
+2. Inheritance:
+   - `TextToImageModel` and `AudioToTextModel` inherit from the base class `AIModel`.
+   - They reuse common properties and methods but also define their own behavior.
+
+3. Polymorphism:
+   - Both subclasses override the `run_model()` method in their own way.
+   - For text input → generate image.
+   - For audio input → return transcription.
+
+4. Method Overriding:
+   - The base class `AIModel` has in a method `run_model()` which is abstract (not implemented).
+   - Each child class (`TextToImageModel`, `AudioToTextModel`) overrides this method with specific functionality.
+
+5. Multiple Decorators:
+   - `@log_action` is used to log which function is runnng.
+   - `@error_handler` is used to handle runtime errors gracefully.
+   - Together, they decorate methods to add extra functionality without changing the core logic.
+
+6. Encapsulation in GUI:
+   - In the `GUIApp` class, variables like `self.file_path` are used internally.
+   - They cannot be accessed dirctly outside the class without proper methods.
+
+Why these concepts are important:
+- Encapsulation makes the program secure and modular.
+- Inhritance avoids code repetition.
+- Polymorphism allows flexbility when running different models.
+- Method overiding makes the base class reusable.
+- Decorators make code cleaner and improve debuging/error handling.
+
