@@ -1,1 +1,6 @@
 
+We have used many method such as:
+- Encapsulation in class GUIApp (all widgets are given private).
+- Inheritance in AIModel class structure.
+- Method overriding in the run_model().
+- Multiple decorators for logging + error handling.
