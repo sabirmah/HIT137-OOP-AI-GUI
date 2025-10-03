@@ -1,0 +1,20 @@
+Models Used in Our Application:
+
+1. Text-to-Image Model:
+   - Model: stabilityai/stable-diffusion-2-1
+   - Category: Text-to-Image
+   - Description: This model generates an image from a text prompt.
+   - Example: Input: "A cute cat playing guitar" → Output: AI-generated image.
+
+2. Audio-to-Text Model:
+   - Model: openai/whisper-tiny
+   - Category: Automatic Speech Recognition (ASR)
+   - Description: This model transcribes speech from an audio file into text.
+   - Example: Input: audio file of spoken English → Output: text transcript.
+
+Why we chose these models:
+- Both are free-to-use on Hugging Face.
+- Both are relatively small and do not require downloading heavy files locally.
+- They represent two different categories (Text-to-Image and Audio-to-Text).
+- They demonstrate the variety of tasks that AI can perform in one GUI.
+
