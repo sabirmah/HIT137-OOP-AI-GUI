@@ -473,8 +473,3 @@ This project is created for educational purposes as part of HIT137 coursework.
 
 **Note**: This application requires an internet connection to access Hugging Face models. Processing times may vary based on network speed and model complexity.
 ```
-
-
-
-
-
