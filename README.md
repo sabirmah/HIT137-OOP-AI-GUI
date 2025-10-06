@@ -60,7 +60,7 @@ This project was developed by:
 
 - **OOP Concepts Explained**: Dedicated window explaining all OOP principles used
 - **Code Examples**: Direct references to implementation in the codebase
-- **Comprehensive Coverage**: Classes, inheritance, encapsulation, polymorphism, decorators, and more
+- **Comprehensive Coverage**: Classes, inheritance, encapsulation, polymorphism, decorators, and 
 
 ### 🏗️ Technical Architecture
 
