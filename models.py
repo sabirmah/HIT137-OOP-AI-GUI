@@ -25,8 +25,4 @@ class AudioToTextModel(AIModel):
     @log_action
     def run_model(self, input_data):
         with open(input_data, "rb") as f:
-            return self.client.audio_to_text(f)
-
-
-
-
+            return self.client.audio_to_text(f) 
