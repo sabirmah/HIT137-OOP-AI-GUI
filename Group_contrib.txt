@@ -1,7 +1,0 @@
-
-Name: Sabir Pudasaini
-Task: Added GUI layout and tested Hugging Face model
-Date: 2025-09-30
-
-Name: Anish regmi
-Task: 
