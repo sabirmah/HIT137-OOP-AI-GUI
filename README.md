@@ -16,7 +16,7 @@
 ### 🎯 Key Capabilities
 
 1. **🔍 Object Detection**: Analyze images and detect objects with bounding boxes, confidence scores, and precise location data
-2. **🎨 Image Generation**: Create stunning images from text descriptions using state-of-the-art AI model
+2. **🎨 Image Generation**: Create stunning images from text descriptions using state-of-the-art AI models
 
 ### 👥 Development Team
 
