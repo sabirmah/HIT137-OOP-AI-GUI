@@ -23,7 +23,7 @@
 This project was developed by:
 - **Anish Regmi**
 - **Sabir Pudasaini**
-- And two other talented contributo
+- And two other talented contributors
 
 ### 🏆 What Makes This Special
 
