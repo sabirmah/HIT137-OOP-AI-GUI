@@ -893,3 +893,10 @@ class AppGUI:
     def run(self):
         """Start the GUI main loop"""
         self.root.mainloop()
+
+
+
+
+
+
+
