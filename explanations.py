@@ -411,11 +411,11 @@ and practical reasons that make them ideal for this project:
 COST AND EFFICIENCY BENEFITS:
 ─────────────────────────────────────────────────────────────────────────────
 Traditional Approach (Running Locally):
-❌ Requires powerful GPU (NVIDIA RTX 3090 or better)
-❌ 10-50 GB of storage for model files
-❌ Complex installation of CUDA, PyTorch, dependencies
-❌ High electricity costs for GPU usage
-❌ Slow inference on CPU-only machines
+Requires powerful GPU (NVIDIA RTX 3090 or better)
+ 10-50 GB of storage for model files
+ Complex installation of CUDA, PyTorch, dependencies
+ High electricity costs for GPU usage
+ Slow inference on CPU-only machines
 
 Our Approach (Hugging Face Inference API):
 ✓ Works on any computer (no GPU needed)
