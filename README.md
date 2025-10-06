@@ -9,7 +9,7 @@
 
 ---
 
-## 📖 Project Overview
+## 📖 Project Overview  
 
 **AI Studio** is a sophisticated desktop application that brings the power of Hugging Face's AI models to your fingertips through an elegant, user-friendly interface. This project demonstrates professional software development practices by implementing core Object-Oriented Programming (OOP) principles in Python, combined with a beautifully styled Tkinter GUI.
 
