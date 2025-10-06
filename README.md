@@ -50,7 +50,7 @@ This project was developed by:
 
 ### 🎨 User Interface
 
-- **Modern Card-Based Design**: Visual model selection with descriptive card
+- **Modern Card-Based Design**: Visual model selection with descriptive cards
 - **Professional Color Scheme**: Blue-themed interface with color-coded action buttons
 - **Intuitive Layout**: Organized sections for model selection, input, and output
 - **Responsive Controls**: Radio buttons, file browsers, and scrollable text areas
