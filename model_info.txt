@@ -16,7 +16,7 @@ Why we chose these models:
 - Both are free-to-use on Hugging Face.
 - Both are relatively small and do not require downloading heavy files locally.
 - They represent two different categories (Text-to-Image and Audio-to-Text).
-- They demonstrate the variety of tasks that AI can perform in one GUI. 
+- They demonstrate the variety of tasks that AI can perform in one GUI.
 
 
 
