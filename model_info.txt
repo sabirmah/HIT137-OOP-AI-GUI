@@ -18,3 +18,5 @@ Why we chose these models:
 - They represent two different categories (Text-to-Image and Audio-to-Text).
 - They demonstrate the variety of tasks that AI can perform in one GUI.
 
+
+
