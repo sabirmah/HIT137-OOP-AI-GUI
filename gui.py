@@ -28,7 +28,7 @@ class OOPExplanationWindow:
         
         title_label = tk.Label(
             header_frame,
-            text="📚 Object-Oriented Programming Concepts",
+            text=" Object-Oriented Programming Concepts",
             font=("Segoe UI", 18, "bold"),
             bg="#2c5aa0",
             fg="white"
@@ -158,13 +158,13 @@ class AppGUI:
         self.root.config(menu=menu_bar)
 
         file_menu = tk.Menu(menu_bar, tearoff=0, bg=self.COLORS['bg_card'], fg=self.COLORS['text_primary'])
-        file_menu.add_command(label="🚪 Exit", command=self.root.quit)
+        file_menu.add_command(label=" Exit", command=self.root.quit)
         menu_bar.add_cascade(label="File", menu=file_menu)
 
         help_menu = tk.Menu(menu_bar, tearoff=0, bg=self.COLORS['bg_card'], fg=self.COLORS['text_primary'])
-        help_menu.add_command(label="📖 OOP Concepts", command=self.show_oop_explanation)
+        help_menu.add_command(label=" OOP Concepts", command=self.show_oop_explanation)
         help_menu.add_separator()
-        help_menu.add_command(label="ℹ️ About", command=self.show_about)
+        help_menu.add_command(label=" About", command=self.show_about)
         menu_bar.add_cascade(label="Help", menu=help_menu)
 
     def show_about(self):
@@ -252,7 +252,7 @@ class AppGUI:
         
         title = tk.Label(
             header,
-            text="🤖 AI Studio",
+            text=" AI Studio",
             font=("Segoe UI", 24, "bold"),
             bg=self.COLORS['primary'],
             fg="white"
@@ -271,7 +271,7 @@ class AppGUI:
         # OOP Explanation button in header
         oop_btn = tk.Button(
             header,
-            text="📚 View OOP Concepts",
+            text=" View OOP Concepts",
             command=self.show_oop_explanation,
             font=("Segoe UI", 11, "bold"),
             bg="white",
@@ -307,7 +307,7 @@ class AppGUI:
         # Model 1 Card (Object Detection)
         model1_card = self.create_model_card(
             cards_container,
-            "� Object Detection",
+            " Object Detection",
             "Detect and identify objects in images",
             "facebook/detr-resnet-50",
             lambda: self.select_model_card(1)
@@ -317,7 +317,7 @@ class AppGUI:
         # Model 2 Card (Text to Image)
         model2_card = self.create_model_card(
             cards_container,
-            "🎨 Text to Image",
+            " Text to Image",
             "Generate images from text descriptions",
             "black-forest-labs/FLUX.1-dev",
             lambda: self.select_model_card(2)
@@ -411,7 +411,7 @@ class AppGUI:
             # Update main action button for Object Detection
             if self.main_action_btn:
                 self.main_action_btn.config(
-                    text="⚡ ACTION\n(Detect Objects)",
+                    text=" ACTION\n(Detect Objects)",
                     bg=self.COLORS['success'],
                     state=tk.NORMAL
                 )
@@ -431,7 +431,7 @@ class AppGUI:
             # Update main action button for Text-to-Image
             if self.main_action_btn:
                 self.main_action_btn.config(
-                    text="⚡ ACTION\n(Generate Image)",
+                    text=" ACTION\n(Generate Image)",
                     bg=self.COLORS['warning'],
                     state=tk.NORMAL
                 )
@@ -440,7 +440,7 @@ class AppGUI:
         messagebox.showinfo(
             "Model Selected", 
             f"Model {model_num} has been loaded successfully!\n\n"
-            "✅ Action button is now ready!\n\n"
+            " Action button is now ready!\n\n"
             "Next steps:\n"
             f"{'1. Click Browse Image to select a file' if model_num == 1 else '1. Type your text description in the input box'}\n"
             "2. Click the ACTION button to run the model"
@@ -524,7 +524,7 @@ class AppGUI:
         # Instructions label
         self.input_instruction_label = tk.Label(
             inner_frame,
-            text="📝 For Text-to-Image: Enter your text description below\n� For Object Detection: Click 'Browse Image' to select an image file",
+            text=" For Text-to-Image: Enter your text description below\n For Object Detection: Click 'Browse Image' to select an image file",
             font=("Segoe UI", 9),
             bg=self.COLORS['bg_card'],
             fg=self.COLORS['text_secondary'],
@@ -561,7 +561,7 @@ class AppGUI:
         # Browse button (for image selection)
         browse_btn = tk.Button(
             buttons_container,
-            text="📁 Browse Image",
+            text=" Browse Image",
             command=self.browse_image,
             font=("Segoe UI", 10, "bold"),
             bg=self.COLORS['secondary'],
@@ -579,7 +579,7 @@ class AppGUI:
         # ACTION button (main action button integrated here!)
         self.main_action_btn = tk.Button(
             buttons_container,
-            text="⚡ ACTION\n(Select Model First)",
+            text=" ACTION\n(Select Model First)",
             command=self.run_selected_model,
             font=("Segoe UI", 11, "bold"),
             bg=self.COLORS['text_secondary'],
@@ -643,7 +643,7 @@ class AppGUI:
         # Clear button
         clear_btn = tk.Button(
             button_frame,
-            text="🗑️ Clear Output",
+            text=" Clear Output",
             command=self.clear_output,
             font=("Segoe UI", 11),
             bg=self.COLORS['danger'],
@@ -726,7 +726,7 @@ class AppGUI:
             if not input_data or len(input_data.strip()) == 0:
                 messagebox.showwarning(
                     "No Input Provided", 
-                    "Please browse and select an image file first!\n\nClick the '📁 Browse Image' button to choose an image."
+                    "Please browse and select an image file first!\n\nClick the ' Browse Image' button to choose an image."
                 )
                 return
             
@@ -750,7 +750,7 @@ class AppGUI:
             if result and len(str(result).strip()) > 0:
                 self.output_display.insert(
                     tk.END,
-                    f"✅ OBJECT DETECTION COMPLETED!\n\n"
+                    f" OBJECT DETECTION COMPLETED!\n\n"
                     f"{'='*60}\n"
                     f"{str(result)}\n"
                     f"{'='*60}\n\n"
@@ -760,7 +760,7 @@ class AppGUI:
             else:
                 self.output_display.insert(
                     tk.END,
-                    "⚠️ No objects were detected in the image.\n\n"
+                    " No objects were detected in the image.\n\n"
                     "This could mean:\n"
                     "• The image has no recognizable objects\n"
                     "• The objects are too small or unclear\n"
@@ -769,18 +769,18 @@ class AppGUI:
                 )
         except FileNotFoundError:
             self.output_display.delete("1.0", tk.END)
-            self.output_display.insert(tk.END, "❌ Error: Image file not found!\n\nPlease select a valid image file.")
+            self.output_display.insert(tk.END, " Error: Image file not found!\n\nPlease select a valid image file.")
             messagebox.showerror("File Not Found", "The selected image file could not be found.")
         except ValueError as ve:
             self.output_display.delete("1.0", tk.END)
-            self.output_display.insert(tk.END, f"❌ Validation Error:\n\n{str(ve)}\n\nPlease check your input and try again.")
+            self.output_display.insert(tk.END, f" Validation Error:\n\n{str(ve)}\n\nPlease check your input and try again.")
             messagebox.showerror("Validation Error", str(ve))
         except Exception as e:
             self.output_display.delete("1.0", tk.END)
             error_msg = str(e)
             self.output_display.insert(
                 tk.END,
-                f"❌ Error occurred:\n\n{error_msg}\n\n"
+                f" Error occurred:\n\n{error_msg}\n\n"
                 "Possible causes:\n"
                 "• Invalid image file or format\n"
                 "• Network connectivity issues\n"
@@ -824,7 +824,7 @@ class AppGUI:
             self.output_display.delete("1.0", tk.END)
             self.output_display.insert(
                 tk.END,
-                "⏳ Generating image... This may take 10-30 seconds...\n\n"
+                " Generating image... This may take 10-30 seconds...\n\n"
                 f"Your prompt: '{input_data}'\n\n"
                 "Please wait while the AI creates your image..."
             )
@@ -840,20 +840,20 @@ class AppGUI:
                 result.save(output_path)
                 self.output_display.insert(
                     tk.END,
-                    f"✅ IMAGE GENERATED SUCCESSFULLY!\n\n"
+                    f" IMAGE GENERATED SUCCESSFULLY!\n\n"
                     f"{'='*60}\n"
-                    f"📁 Saved as: {output_path}\n"
-                    f"📐 Size: {result.size[0]} x {result.size[1]} pixels\n"
-                    f"📝 Prompt: {input_data}\n"
+                    f" Saved as: {output_path}\n"
+                    f" Size: {result.size[0]} x {result.size[1]} pixels\n"
+                    f" Prompt: {input_data}\n"
                     f"{'='*60}\n\n"
-                    f"✨ Your image has been saved in the current directory!\n"
+                    f" Your image has been saved in the current directory!\n"
                     f"You can find it at: {output_path}"
                 )
                 messagebox.showinfo(
                     "Success!",
                     f"Image generated and saved successfully!\n\n"
-                    f"📁 File: {output_path}\n"
-                    f"📐 Size: {result.size[0]} x {result.size[1]} pixels\n\n"
+                    f" File: {output_path}\n"
+                    f" Size: {result.size[0]} x {result.size[1]} pixels\n\n"
                     f"Check the application folder to view your image!"
                 )
             else:
@@ -862,7 +862,7 @@ class AppGUI:
             self.output_display.delete("1.0", tk.END)
             self.output_display.insert(
                 tk.END,
-                f"❌ Error occurred:\n\n{str(e)}\n\n"
+                f" Error occurred:\n\n{str(e)}\n\n"
                 "Common issues:\n"
                 "• Network connectivity problems\n"
                 "• API rate limits\n"
