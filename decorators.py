@@ -12,3 +12,6 @@ def validate_input(func):
             raise ValueError("Input data is missing or empty.")
         return func(self, input_data)
     return wrapper
+
+
+
